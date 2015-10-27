@@ -9,6 +9,11 @@ namespace CheckLowRate
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("what is your payrate?");
+            int payRate = Convert.ToInt32(Console.ReadLine());
+            if (payRate < 5.65 || payRate > 60)
+            Console.WriteLine("Error");
+
         }
     }
 }
