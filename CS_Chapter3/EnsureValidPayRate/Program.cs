@@ -11,7 +11,8 @@ namespace EnsureValidPayRate
         {
             Console.WriteLine("What is you hourly payrate?");
             int payrate = Convert.ToInt32(Console.ReadLine());
-            if (payRate < 5.65 || payRate > 49.99)
+            if (payrate < 5.65 || payrate > 49.99)
+                Console.WriteLine("Error!");
         }
     }
 }
